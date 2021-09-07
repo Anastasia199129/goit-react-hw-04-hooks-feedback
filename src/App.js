@@ -37,7 +37,7 @@ const App = () => {
       </Section>
 
       <Section title="Statistics">
-        {good || neutral || bad === true ? (
+        {countTotalFeedback() > 0 ? (
           <Statistics
             good={good}
             neutral={neutral}
